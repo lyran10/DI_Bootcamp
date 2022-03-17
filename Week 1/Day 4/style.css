@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif
+}
+/* heading*/
+.resume{
+  background-color: #E1E9F0;
+  height: 700px;
+  width: 80%;
+  margin-left: 125px;
+  border: solid 5px black;
+}
+
+.head{
+display: flex;
+width: 90%;
+margin: auto;
+border-bottom: solid 2px #C2BAD1;
+background-color: #E1E9F0;
+justify-content: space-between;
+padding-top: 50px;
+position: relative;
+
+}
+
+
+#lastName::after{
+  content: "";
+    display: block;
+    width: 0;
+    background-color:#C2BAD1;
+    height: 2px;
+    transition: 1s;
+}
+
+#lastName:hover::after{
+  width: 50px;
+}
+
+.image{
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  position: relative;
+  bottom: 30px;
+}
+
+/*content*/
+
+.container{
+  display: flex
+}
+
+.info{
+  letter-spacing: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+.info::after{
+ 
+  content: "";
+    display: block;
+    width: 0;
+    background-color:#C2BAD1;
+    height: 2px;
+    transition: 1s;
+}
+
+.info:hover::after{
+  width: 40px;
+  
+}
+
+.content1{
+    border-right: solid 2px #C2BAD1;
+}
+
+.content1{
+  display: flex; 
+  flex-direction: column;
+  gap: 110px;
+  padding: 30px;
+  margin: auto;
+}
+
+.content2{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  position: relative;
+}
+
+/*paragragh*/
+.p2{
+  line-height: 20px;
+}
+
+.p{
+  line-height: 30px;
+}
+
+i{
+  padding-right: 20px;
+}
+
+/*media query*/
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  .resume{
+    margin: auto;
+    height: fit-content;
+  }
+ }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+  .resume{
+    margin: auto;
+    height: fit-content;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+  .resume{
+    margin: auto;
+    height: fit-content;
+  }
+  
+  .head{
+    text-align: center;
+    display: block;
+  }
+.image{
+  margin: auto;
+  margin-top: 50px;
+}
+
+  .container{
+    text-align: center;
+    display: block;
+  }
+
+  #lastName::after{
+    content: none;
+    text-align: center;
+      display: block;
+      width: 0;
+      background-color: black;
+      height: 2px;
+      transition: 1s;
+  }
+
+  .info::after{
+    content: none;
+      display: block;
+      width: 0;
+      background-color:#C2BAD1;
+      height: 2px;
+      transition: 1s;
+  }
+
+.content1{
+  gap: 30px;
+}
+
+.info{
+  text-decoration: underline;
+}
+
+}
+
+@media all and (max-width: 480px) {
+  
+  .resume{
+    margin: auto;
+    height: fit-content;
+  }
+
+  .head{
+    text-align: center;
+    display: block;
+  }
+.image{
+  margin: auto;
+  margin-top: 50px;
+}
+
+  .container{
+    text-align: center;
+    display: block;
+  }
+  #lastName::after{
+    content: none;
+      display: block;
+      width: 0;
+
+  }
+  .info::after{
+        content: none;
+          display: block;
+          width: 0;
+          background-color:#C2BAD1;
+          height: 2px;
+          transition: 1s;
+      }
+
+  
+  
+
+ }
