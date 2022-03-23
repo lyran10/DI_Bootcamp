@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color: #85C88A;
+}
+
+h1{
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(15,1fr);
+  grid-template-areas: 
+  'f l e'
+  'p w c'
+  'h h h'
+  's s s'
+  'a a a'
+  'subscribe subscribe subscribe';
+  grid-gap: 10px;
+  grid-row-gap: 30px;
+  width: 550px;
+  margin-top: 70px;
+  
+}
+
+.b1{
+  grid-area: f ;
+}
+.b2{
+  grid-area: l;
+}
+.b3{
+  grid-area: e;
+}
+.b4{
+  grid-area: p;
+}
+.b5{
+  grid-area: w;
+}
+.b6{
+  grid-area: c;
+}
+.b7{
+  grid-area: h;
+}
+.b8{
+  grid-area: a;
+}
+
+.b9{
+  grid-area: s;
+}
+
+.b10{
+  grid-area: subscribe;
+}
+
+.full-width{
+ width: 100%;
+}
+
+#padding{
+  padding: 5px;
+}
+
+.button{
+  text-align: center;
+  margin-top: 40px;
+}
+
+#download-button{
+  background-color: #4D96FF;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
