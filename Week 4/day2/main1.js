@@ -36,3 +36,32 @@
 // }
 
 // console.log(capAndLow("asfdasfas"))
+
+
+// let stock = { 
+//   "banana": 6, 
+//   "apple": 0,
+//   "pear": 12,
+//   "orange": 32,
+//   "blueberry":1
+// }  
+
+// let prices = {    
+//   "banana": 4, 
+//   "apple": 2, 
+//   "pear": 1,
+//   "orange": 1.5,
+//   "blueberry":10
+// } 
+
+// let shop = ["banana","apple","orange"]
+// let totalcost = 0
+// for (const i of shop) {
+//   totalcost =+ stock[i]
+// }
+
+// console.log(totalcost)
+
+
+let playTheGame = ()
+}
