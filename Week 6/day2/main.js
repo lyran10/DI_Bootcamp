@@ -138,3 +138,10 @@ index === 0 ? console.log(`#${index+1}${ordinal[st]} choice is ${ele}`)
 :index >= 3?console.log(`#${index+1}${ordinal[th]} choice is ${ele}`):ele)
 
 //--------------------------------------------------------------------------------
+
+
+// i+1 {i < 3?ordinal[i+1]:ordinal[0]}
+
+
+let obj1 = 
+ 
