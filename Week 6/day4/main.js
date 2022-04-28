@@ -54,40 +54,28 @@
 
 //Exercise 4
 
-let signIn = ((name,pic) => {
-    let container = document.querySelector("#container")
-    let div = document.createElement("div")
-    container.appendChild(div)
-    div.classList.add("d-flex","gap-2")
-    let p = document.createElement("p")
-    let img = document.createElement("img")
-    div.appendChild(p)
-    p.classList.add("mt-2")
-    div.appendChild(img).src = pic
-    img.style.width = "40px"
-    img.style.height = "40px"
-    img.style.borderRadius = "100px"
-    p.innerHTML = name
-})("liran","liran.jpg")
+// John has just signed in to your website and you want to welcome him.
 
-// Exercise 5
+// Create a Bootstrap Navbar in your HTML file.
+// In your js file, create a self invoking funtion that takes 1 argument: the name of the user that just signed in.
+// The function should add a div in the nabvar, displaying the name of the user and his profile picture.
 
-function makeJuice(size){
-    let ingrediants = []
 
-    function addIngrediants(ingrediant1,ingrediant2,ingrediant3){
-            ingrediants.push(ingrediant1,ingrediant2,ingrediant3)
-            console.log(`The client wants a ${size} juice, containing ${ingrediant1}, ${ingrediant2}, ${ingrediant3}`)
-
-           function displayJuice(){
-            ingrediants.forEach(ele,index,arr => console.log(console.log(`The client wants a ${size} juice, containing ${arr[index]}, ${arr[index]}, ${arr[index]}`)))
-           }
-           displayJuice()
-    }
-    addIngrediants("Beet","Carrot","Lemon")
-    addIngrediants("Apple","Banana","lemon")
-}
-makeJuice("medium")
+// let signIn = ((name,pic) => {
+//     let container = document.querySelector("#container")
+//     let div = document.createElement("div")
+//     container.appendChild(div)
+//     div.classList.add("d-flex","gap-2")
+//     let p = document.createElement("p")
+//     let img = document.createElement("img")
+//     div.appendChild(p)
+//     p.classList.add("mt-2")
+//     div.appendChild(img).src = pic
+//     img.style.width = "40px"
+//     img.style.height = "40px"
+//     img.style.borderRadius = "100px"
+//     p.innerHTML = name
+// })("liran","liran.jpg")
 
 
 
