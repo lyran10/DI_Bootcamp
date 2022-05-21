@@ -168,6 +168,9 @@ const robots = [
         // while filtering robots if there is no match than it will show this msg that no robot was found
       NoMatch(e){
         let arr = []
+        //1-this.card doenst exist.
+        //cause you dind't add it while createing the elements.
+        //2 this.card.foreach is not possible cause this.card should be an html element and not an array.
         this.card.forEach(ele => {
           if(ele.classList[4] === "d-none"){ // if ele has the class called d-none on the 5th index than push it to the array "arr=[]"
             arr.push(ele.classList[4])
