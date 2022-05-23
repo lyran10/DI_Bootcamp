@@ -168,10 +168,8 @@ const robots = [
         // while filtering robots if there is no match than it will show this msg that no robot was found
       NoMatch(e){
         let arr = []
-        //1-this.card doenst exist.
-        //cause you dind't add it while createing the elements.
-        //2 this.card.foreach is not possible cause this.card should be an html element and not an array.
-        this.card.forEach(ele => {
+        // on line 223 created an array of all cards than using for each on it and not using this as it is created outside of the class
+        card.forEach(ele => {
           if(ele.classList[4] === "d-none"){ // if ele has the class called d-none on the 5th index than push it to the array "arr=[]"
             arr.push(ele.classList[4])
           }
@@ -195,14 +193,14 @@ const robots = [
         if(this.name.toLowerCase().indexOf(input.value.toLowerCase().trim()) != -1)
         {
           h1.innerHTML = "" // make it empty
-          this.card[e].classList.remove("d-none")
-          this.card[e].classList.add("d-flex")
+          card[e].classList.remove("d-none")
+          card[e].classList.add("d-flex")
           console.log("MATCH")
           
         }else{
           h1.innerHTML = ""
-          this.card[e].classList.remove("d-flex")
-          this.card[e].classList.add("d-none")
+          card[e].classList.remove("d-flex")
+          card[e].classList.add("d-none")
           console.log("NO MATCH")
         }
        this.NoMatch()
@@ -219,7 +217,7 @@ const robots = [
   robotCard.forEach(ele => {ele.createElements()})
 
   // selectors of the created elements
-  let card = document.querySelectorAll(".card")
+  let card = [...document.querySelectorAll(".card")]
   let like1 = document.querySelectorAll(".like")
   let dislike = document.querySelectorAll(".dislike")
   let number = document.querySelectorAll(".number")
