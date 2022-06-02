@@ -108,3 +108,5 @@ btn.addEventListener("click",() => {
   Star_wars.fetchData()
 
 })
+
+console.log("liran")
