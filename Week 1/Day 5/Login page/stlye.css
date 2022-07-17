@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  font-family: Montserrat;
+  text-align: center;
+}
+
+/* main container */
+.main-container{
+  height: 650px;
+  width: 400px;
+  margin: auto;
+  margin-top: 40px;
+  background-color:white;
+  border: black solid 1px;
+  position:relative;
+}
+
+/* header */
+h1{
+  position: relative;
+  top: 80px;
+}
+
+/* form */
+/* email and password */
+.inputs .email,.password{
+  margin-bottom: 500px;
+  padding: 5px;
+  margin: auto;
+}
+
+.inputs{
+  margin-top: 200px;
+}
+
+.text{
+  width: 70%;
+  padding: 10px;
+  background-color: #F7F7F7;
+  text-align: left;
+}
+
+::placeholder{
+  text-align: left;
+}
+
+/* remember me */
+.remember-me{
+  margin-right:180px;
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: small;
+  position: relative;
+}
+
+/* forgot password */
+.f-p{
+  position: absolute;
+  left: 180px;  
+  font-size: small;
+  color: black;
+  width: 100%;
+}
+
+/* submit button */
+.submit{
+  position: relative;
+  width: 80%;
+  margin-top: 50px;
+}
+
+.s{
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  background-color: #980F5A;
+  color: white;
+  font-weight: 700;
+}
+
+/* or login with paragraph */
+.or{
+  text-align: center;
+  margin-top: 150px;
+}
+
+/* icons */
+.icons{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+i{
+  padding: 5px;
+}
+
+/* sign up */
+.sign-up{
+  margin-top: 30px;
+}
+
+/* links */
+a{ 
+  text-decoration: none;
+  font-weight: 800;
+}
+
+
+@media all and (max-width:480px){
+    .main-container{
+      width: 350px;
+    }
+}
+
+
+
+
+

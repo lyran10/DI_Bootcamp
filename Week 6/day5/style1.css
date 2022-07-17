@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+ }
+ 
+ .container{
+   height:550px;
+   width: 100vw;
+   background-color: red;
+   margin-top: 100px;
+}
+
+.mini-header{
+  padding-top: 20px;
+}
+
+
+
+input{
+  margin-top: 100px;
+}
+
+
+
+
+
+
+
+ 

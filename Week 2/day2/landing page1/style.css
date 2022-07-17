@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+/* background */
+.background{
+  height: 800px;
+  width: 100%;
+  background-image: url(map.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0,0,0,0.4 );
+  position: relative;
+}
+/* heading */
+.head{
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  line-height: 50px;
+}
+
+/* first container */
+.container{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-right: 100px;
+  margin-top: 100px;
+  font-weight: 700;
+
+}
+
+/* h2 in the first container */
+h2{
+  font-size: xx-large;
+  color: #332FD0;
+  font-weight: 900;
+}
+
+/* second container */
+.container1{
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.customer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
+  width: 400px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0 10px 20px rgba(0, 0, 0,0.05);
+  
+}
+
+/* first div */
+.para{
+  height: 50%;
+  padding: 20px;
+}
+
+/* second div */
+.image {
+  height: 100px;
+  width: 100px;
+  border: solid black 1px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom:60px;
+
+}
+
+/* third div */
+.name{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #F4BBBB;
+  width: 100%;
+  flex-grow: 4;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+
+/* changing divs positions */
+.c-1{
+  align-self: flex-start;
+}
+
+.c-2{
+  align-self: flex-end;
+}
+
+.c-3{
+  align-self: center;
+}
+
+/* changing divs colors */
+.n-1{
+  background-color: #5B7DB1;
+}
+
+.n-2{
+  background-color: #E5EFC1;
+}
+
+.n-3{
+  background-color: #6EDCD9;
+}
+
+
+
+/*media query*/
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+      .background{
+        height: fit-content;
+      }  
+
+      .container1{
+        display: block;
+        height: fit-content;
+      }
+
+      .customer{
+        margin: auto;
+        margin-top: 50px;
+      }
+      
+}
+  
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+  .background{
+    height: fit-content;
+  }  
+
+  .container1{
+    display: block;
+    height: fit-content;
+  }
+
+  .customer{
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+  
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+  .background{
+    height: fit-content;
+  }  
+  
+  .head{
+    width: 100%;
+   }
+
+  .container{
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    padding-top: 50px;
+  }
+
+  .shopify{
+    margin-top: 20px;
+  }
+  
+  .container1{
+    display: block;
+    height: fit-content;
+  }
+
+  .customer{
+    margin: auto;
+    margin-top: 50px;
+  }
+ }
+
+@media all and (max-width: 480px) {
+  .background{
+    height: fit-content;
+  } 
+  
+  .head{
+    width: 100%;
+   }
+
+  .container{
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    padding-top: 50px;
+  }
+
+  .shopify{
+    margin-top: 20px;
+  }
+  
+  .container1{
+    display: block;
+    height: fit-content;
+  }
+
+  .customer{
+    margin: auto;
+    margin-top: 50px;
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 280px) {
+  .background{
+    height: fit-content;
+  }  
+.head{
+ width: 100%;
+ 
+}
+
+  .container{
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    padding-top: 50px;
+  }
+
+  .shopify{
+    margin-top: 20px;
+  }
+  
+  .container1{
+    display: block;
+    height: fit-content;
+  }
+
+  .customer{
+    margin: auto;
+    margin-top: 50px;
+    width: 250px;
+  }
+}

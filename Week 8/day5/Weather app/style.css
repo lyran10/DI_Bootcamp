@@ -1,0 +1,116 @@
+*{
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+/* style for the card that is created in js */
+.card{
+  filter: drop-shadow(5px 5px 5px rgba(197, 189, 189, 0.912));
+}
+
+/* search box */
+.box{
+  width: 500px;
+  height: 50px;
+  background-color:white;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.box > .input_field{
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+
+/* toggle button for the celsius and fahrenheit */
+
+.toggle1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+position: absolute;
+right: 100px;
+bottom: 10px;
+width: 100px;
+}
+
+
+.toggle_input{
+  display: none;
+}
+
+.toggle_fill{
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius:50px;
+  background-color: green;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.toggle_input:checked ~ .toggle_fill{
+  background-color: white;
+}
+
+.toggle_fill::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius:50px;
+  background-color: #C7C7C7;
+  border-radius: 50px ;
+  transition: transform 0.2s;
+}
+
+.toggle_input:checked ~ .toggle_fill::before{
+  transform: translateX(30px);
+}
+
+/* msg which will pop up when wrong city is entered */
+.msg{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top:100px;
+  width:200px;
+  height:200px ;
+  background-color: red;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+#msg-button{
+  height: 30px;
+  width: 50px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+
+}
+
+.msg.show{
+  display: flex;
+}
+
+/* media query */
+
+@media all and (max-width: 900px){
+ .toggle1{
+   position: static;
+   
+ }
+ 
+}
+
+
+
+

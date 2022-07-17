@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+"customer_id","first_name","last_name"
+1,"Greg","Jones"
+2,"Sandra","Jones"
+4,"Trevor","Green"
+5,"Melanie","Johnson"
+=======
+"customer_id","first_name","last_name"
+1,"Greg","Jones"
+2,"Sandra","Jones"
+4,"Trevor","Green"
+5,"Melanie","Johnson"
+>>>>>>> 7aba69f (week 10 day2)
